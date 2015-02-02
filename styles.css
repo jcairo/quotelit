@@ -1,0 +1,98 @@
+body, html {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: avenir-light;
+    -webkit-font-smoothing: antialised;
+}
+
+.side-bar {
+    position: fixed;
+    display: none;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    height: 100%;
+    overflow: auto;
+    border-right:1px solid rgb(189, 189, 189);
+    background-color: #E4E4E4;
+    width: 30%;
+}
+
+p {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+}
+
+.side-bar-content ul {
+    list-style-type: none;
+    text-align: right;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: 0;
+    font-weight: 600;
+}
+
+.side-bar-horizontal-rule {
+    border-bottom: 1px solid rgb(207, 207, 207);
+    width: 100%;
+    margin-right: -10em;
+}
+.side-bar-content li {
+    padding-right: .6em;
+    padding-left: .6em;
+    font-size: 18px;
+    line-height: 18px;
+}
+.side-bar-title {
+    padding-top: 13px;
+}
+
+.side-bar-subtitle {
+    line-height: 9px;
+    font-size: 9px;
+    margin: 0px;
+    padding-bottom: 13px;
+    color: rgb(107, 107, 107);
+}
+
+
+.side-bar-content li:nth-child(even) {
+    background-color: #E8E8E8;
+}
+
+
+.side-bar.show {
+    display: inline-block;
+}
+
+.live-quotes {
+    position: fixed;
+    right: 0px;
+    width: 25%;
+    top: 0px;
+    bottom: 0px;
+    border-left: 1px solid lightgrey;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(1,1,1,0.06);
+
+}
+
+.live-stream {
+    float: left;
+    height: 100%;
+    background-color: rgba(1,1,1,0.06);
+    width: 20%;
+}
+
+.quote-wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
